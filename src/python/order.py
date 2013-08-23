@@ -50,7 +50,8 @@ def flip4(folioList):
 if __name__ == "__main__":
 	if len(sys.argv) != 3:
 		print "Reorder the pages in a PDF document to print it in pamphlet order."
-		print "Usage: order.py filename pagecount foliocount
+		print "Usage: order.py filename pagecount"
+		sys.exit(1)
 
 	filename = sys.argv[1]
 	pageCount= int(sys.argv[2])
